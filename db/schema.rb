@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20131014191958) do
 
-  create_table "cached_users", :force => true do |t|
-  end
-
   create_table "karma_points", :force => true do |t|
     t.integer  "user_id",    :null => false
     t.integer  "value",      :null => false
