@@ -38,6 +38,7 @@ GEM
     bourne (1.2.1)
       mocha (= 0.12.7)
     builder (3.0.4)
+    coderay (1.0.9)
     daemons (1.1.9)
     diff-lcs (1.2.1)
     erubis (2.7.0)
@@ -63,12 +64,17 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     metaclass (0.0.1)
+    method_source (0.8.2)
     mime-types (1.21)
     mocha (0.12.7)
       metaclass (~> 0.0.1)
     multi_json (1.7.0)
     pg (0.14.1)
     polyglot (0.3.3)
+    pry (0.9.12.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.4.5)
@@ -119,6 +125,7 @@ GEM
     shoulda-matchers (1.5.0)
       activesupport (>= 3.0.0)
       bourne (~> 1.2.0)
+    slop (3.4.6)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -149,6 +156,7 @@ DEPENDENCIES
   faker
   jquery-rails
   pg
+  pry
   quiet_assets
   rails (= 3.2.12)
   rspec

@@ -11,7 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131014165923) do
+ActiveRecord::Schema.define(:version => 20131014191958) do
+
+  create_table "cached_users", :force => true do |t|
+  end
 
   create_table "karma_points", :force => true do |t|
     t.integer  "user_id",    :null => false
@@ -30,6 +33,9 @@ ActiveRecord::Schema.define(:version => 20131014165923) do
     t.string   "email",                    :null => false
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
+    t.integer  "total"
   end
+
+  add_index "users", ["total"], :name => "total_ix"
 
 end
